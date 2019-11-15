@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'ErrorKit'
-    s.version = '1.0.0'
+    s.version = '1.0.1'
     s.summary = 'Pod that tries to help simplify Error Logging'
     s.description = <<-DESC 
     Pod that helps simplify Error logging in Swift
