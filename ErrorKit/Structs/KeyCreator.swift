@@ -42,6 +42,7 @@ public struct KeyCreator {
         if let bundleID = Bundle.main.bundleIdentifier {
             key.append("bundleID=\(bundleID)/")
         }
+        key.append("level=\(exception.type)/")
         key.append(self.getTimePartition())
         key.append("errorID=/\(exception.id).json")
         return key
