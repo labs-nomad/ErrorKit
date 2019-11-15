@@ -10,6 +10,14 @@
 		CC31D8C2237F07C7009B1287 /* ErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC31D8B8237F07C7009B1287 /* ErrorKit.framework */; };
 		CC31D8C7237F07C7009B1287 /* ErrorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8C6237F07C7009B1287 /* ErrorKitTests.swift */; };
 		CC31D8C9237F07C7009B1287 /* ErrorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC31D8BB237F07C7009B1287 /* ErrorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC31D8D4237F08F6009B1287 /* ErrorPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8D3237F08F6009B1287 /* ErrorPrintable.swift */; };
+		CC31D8DA237F15C6009B1287 /* ExceptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8D9237F15C6009B1287 /* ExceptionType.swift */; };
+		CC31D8E1237F2611009B1287 /* KeyCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8E0237F2611009B1287 /* KeyCreator.swift */; };
+		CC31D8E3237F287F009B1287 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8E2237F287F009B1287 /* Exception.swift */; };
+		CC31D8E6237F28F3009B1287 /* Date_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8E5237F28F3009B1287 /* Date_Extensions.swift */; };
+		CC31D8E8237F29F9009B1287 /* Error_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8E7237F29F9009B1287 /* Error_Extensions.swift */; };
+		CC31D8EA237F2E27009B1287 /* ErrorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8E9237F2E27009B1287 /* ErrorKit.swift */; };
+		CC31D8ED237F2F70009B1287 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31D8EC237F2F70009B1287 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		CC31D8C1237F07C7009B1287 /* ErrorKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErrorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC31D8C6237F07C7009B1287 /* ErrorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKitTests.swift; sourceTree = "<group>"; };
 		CC31D8C8237F07C7009B1287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC31D8D3237F08F6009B1287 /* ErrorPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPrintable.swift; sourceTree = "<group>"; };
+		CC31D8D9237F15C6009B1287 /* ExceptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionType.swift; sourceTree = "<group>"; };
+		CC31D8E0237F2611009B1287 /* KeyCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCreator.swift; sourceTree = "<group>"; };
+		CC31D8E2237F287F009B1287 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
+		CC31D8E5237F28F3009B1287 /* Date_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_Extensions.swift; sourceTree = "<group>"; };
+		CC31D8E7237F29F9009B1287 /* Error_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error_Extensions.swift; sourceTree = "<group>"; };
+		CC31D8E9237F2E27009B1287 /* ErrorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKit.swift; sourceTree = "<group>"; };
+		CC31D8EC237F2F70009B1287 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,12 @@
 		CC31D8BA237F07C7009B1287 /* ErrorKit */ = {
 			isa = PBXGroup;
 			children = (
+				CC31D8EB237F2F63009B1287 /* Global */,
+				CC31D8E4237F28E1009B1287 /* Extensions */,
+				CC31D8DF237F2602009B1287 /* Structs */,
+				CC31D8DE237F1A53009B1287 /* Models */,
+				CC31D8D8237F15B6009B1287 /* Enumerations */,
+				CC31D8D2237F08E2009B1287 /* Protocols */,
 				CC31D8BB237F07C7009B1287 /* ErrorKit.h */,
 				CC31D8BC237F07C7009B1287 /* Info.plist */,
 			);
@@ -84,6 +106,56 @@
 				CC31D8C8237F07C7009B1287 /* Info.plist */,
 			);
 			path = ErrorKitTests;
+			sourceTree = "<group>";
+		};
+		CC31D8D2237F08E2009B1287 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC31D8D3237F08F6009B1287 /* ErrorPrintable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CC31D8D8237F15B6009B1287 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				CC31D8D9237F15C6009B1287 /* ExceptionType.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		CC31D8DE237F1A53009B1287 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC31D8E2237F287F009B1287 /* Exception.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC31D8DF237F2602009B1287 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				CC31D8E9237F2E27009B1287 /* ErrorKit.swift */,
+				CC31D8E0237F2611009B1287 /* KeyCreator.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		CC31D8E4237F28E1009B1287 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC31D8E5237F28F3009B1287 /* Date_Extensions.swift */,
+				CC31D8E7237F29F9009B1287 /* Error_Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC31D8EB237F2F63009B1287 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CC31D8EC237F2F70009B1287 /* Notifications.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +220,7 @@
 				TargetAttributes = {
 					CC31D8B7237F07C7009B1287 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					CC31D8C0237F07C7009B1287 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC31D8ED237F2F70009B1287 /* Notifications.swift in Sources */,
+				CC31D8EA237F2E27009B1287 /* ErrorKit.swift in Sources */,
+				CC31D8D4237F08F6009B1287 /* ErrorPrintable.swift in Sources */,
+				CC31D8E6237F28F3009B1287 /* Date_Extensions.swift in Sources */,
+				CC31D8E8237F29F9009B1287 /* Error_Extensions.swift in Sources */,
+				CC31D8DA237F15C6009B1287 /* ExceptionType.swift in Sources */,
+				CC31D8E3237F287F009B1287 /* Exception.swift in Sources */,
+				CC31D8E1237F2611009B1287 /* KeyCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +421,7 @@
 		CC31D8CD237F07C7009B1287 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nomadgo.ErrorKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +446,7 @@
 		CC31D8CE237F07C7009B1287 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +470,7 @@
 		CC31D8D0237F07C7009B1287 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ErrorKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +488,7 @@
 		CC31D8D1237F07C7009B1287 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ErrorKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
