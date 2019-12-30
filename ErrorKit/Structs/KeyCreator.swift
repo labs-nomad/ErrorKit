@@ -18,12 +18,12 @@ public struct KeyCreator {
     }
     
     //MARK: Functions
-    /// Function that gets a partition key for a timestamp in the format of year=YYYY/month=MM/day=dd/hour=HH
+    /// Function that gets a partition key for a timestamp in the format of year=yyyy/month=MM/day=dd/hour=HH
     /// - Parameter date: The date that you want to construct the has from
     public func getTimePartition(_ date: Date = Date()) -> String {
         let formatter = DateFormatter()
         formatter.timeZone = TimeZone(abbreviation: "UTC")
-        formatter.dateFormat = "YYYY"
+        formatter.dateFormat = "yyyy"
         let year = formatter.string(from: date)
         formatter.dateFormat = "MM"
         let month = formatter.string(from: date)
