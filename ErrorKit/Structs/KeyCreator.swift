@@ -44,7 +44,7 @@ public struct KeyCreator {
         }
         key.append("level=\(exception.type)/")
         key.append(self.getTimePartition())
-        key.append("errorID=/\(exception.id).json")
+        key.append("/errorID=\(exception.id)/\(exception.id).json")
         return key
     }
 }
