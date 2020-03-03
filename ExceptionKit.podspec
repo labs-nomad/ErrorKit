@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'ExceptionKit'
-    s.version = '1.0.7'
+    s.version = '1.0.8'
     s.summary = 'Pod that tries to help simplify Error Logging'
     s.description = <<-DESC 
     Pod that helps simplify Error logging in Swift
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '11.1'
 
-    s.source_files = 'ErrorKit/**/*.{h,m,swift}'
+    s.source_files = 'Sources/**/*.swift'
   
     s.swift_version = '5'
 end
