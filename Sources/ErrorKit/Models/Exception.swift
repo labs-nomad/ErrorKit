@@ -24,9 +24,9 @@ public struct Exception: Encodable {
         case type
     }
     
-    public init(title: String?, message: String?, type: ExceptionType = .info) {
-        self.title = title ?? "No Title"
-        self.message = message ?? "No Message"
+    public init(message: Message, type: ExceptionType = .info) {
+        self.title = message.title ?? "No Title"
+        self.message = message.message ?? "No Message"
         self.type = type.rawValue
     }
     
@@ -34,5 +34,6 @@ public struct Exception: Encodable {
         self.title = error.title
         self.message = error.message
         self.type = type.rawValue
+
     }
 }
