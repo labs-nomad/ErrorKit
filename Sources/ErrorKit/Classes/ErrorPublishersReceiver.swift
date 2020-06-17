@@ -26,7 +26,7 @@ public class ErrorPublishersReceiver {
     
     //MARK: Init
     /// Initalize the class and sets up the `Combine` Subscriptions.
-    init() {
+    public init() {
         let verbosityChangeSubscription = ErrorPublishers.changeVerbosity.sink { (newVerbosity) in
             self.verbosity = newVerbosity
         }
