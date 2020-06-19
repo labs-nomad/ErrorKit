@@ -16,5 +16,5 @@ public struct ErrorPublishers {
     /// We want ot know when the `Verbosity` level changes
     static public let changeVerbosity: CurrentValueSubject<Verbosity, Never> = CurrentValueSubject<Verbosity, Never>(Verbosity.ERROR)
     /// We want to gather the Exception Packages into a pipeline.
-    static let newExceptionPackage: PassthroughSubject<ExceptionPackage, Never> = PassthroughSubject<ExceptionPackage, Never>()
+    static public let newExceptionPackage: PassthroughSubject<ExceptionPackage, Never> = PassthroughSubject<ExceptionPackage, Never>()
 }
